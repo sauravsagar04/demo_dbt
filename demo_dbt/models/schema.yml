@@ -23,19 +23,13 @@ models:
     description: "A starter dbt view model"
     columns:
       - name: c_custkey
-        description: "The primary key for this table"
+        description: "The primary key for customers table"
         tests:
           - unique
           - not_null
-      - name: c_name
-        description: "Name of the customer"
+      - name: o_custkey
+        description: "The primary key for orders table"
         tests:
+          - unique
           - not null
-      - name: c_address
-        description: "Customer address"
-        tests:
-          - not null
-      - name: c_phone
-        description: "customer phone number"
-        tests:
-          - not null
+     
