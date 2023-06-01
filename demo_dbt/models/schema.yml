@@ -19,8 +19,8 @@ models:
         tests:
           - unique
           - not_null
-  - name: customers_info_view
-    description: "A starter dbt view model"
+  - name: customers_info_model
+    description: "A starter dbt model"
     columns:
       - name: c_custkey
         description: "The primary key for customers table"
@@ -32,4 +32,9 @@ models:
         tests:
           - unique
           - not null
+  - name: order_status_group_sum
+    dscription: "total sum of each group from status"
+    columns:
+      - name: o_orderstatus
+        description: "order status"
      
