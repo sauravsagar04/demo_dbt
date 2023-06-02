@@ -22,18 +22,22 @@ models:
   - name: customers_info_model
     description: "A starter dbt model"
     columns:
-      - name: c_custkey
+      - name: customer_id
         description: "The primary key for customers table"
         tests:
           - unique
           - not_null
-      - name: o_custkey
-        description: "The primary key for orders table"
+      - name: c_name
+        description: "name of the customer"
         tests:
           - unique
           - not null
-  - name: order_status_group_sum
-    dscription: "total sum of each group from status"
+      - name: first_order_date
+        dscription: ""
+      - name: most_recent_order_date
+        description: ""
+      - name: number_of_orders
+        descripton: ""
     columns:
       - name: o_orderstatus
         description: "order status"
