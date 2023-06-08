@@ -1,0 +1,3 @@
+packages:
+  - package: datalakehouse/dlh_salesforce
+    version: 0.1.4

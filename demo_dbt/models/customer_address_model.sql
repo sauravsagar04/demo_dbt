@@ -16,4 +16,4 @@ select
 from customers
 
 join customer_city_address on (customer_city_address.customer_id=customer_id) 
-where customer_id in (select c_custkey from customers where c_address ='new york')
+where customer_city_address.customer_id in (select c_custkey from customers where c_address ='new york')
